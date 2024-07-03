@@ -1,1 +1,35 @@
+Random Password Generator
 
+This python script creates an arbitrarily password that relies on user’s desired specifications like its length and types of characters it has.
+
+Libraries and Modules
+
+random: It is used to produce random numbers (in this case, random characters are selected).
+
+string: It is used to define various character sets that can be employed in making passwords. For instance, ascii_letters, digits, and punctuation are some of the string constants made available by this module.
+
+Functions
+
+get_user_input():
+
+It asks the user for the length of a password they want as well as whether or not it should contain letters, numbers, or symbols.
+
+Changes input from user into boolean (include_letters, include_numbers, include_symbols) if it were y/n characters to become true/false values respectively.
+
+validate_user_input(include_letters, include_numbers, include_symbols):
+
+This checks if there is at least one character type selected by the user i.e letters/numbers/or/symbols.
+
+If no character types have been selected by a user then return False and print an error message otherwise True.
+
+generate_password(length, include_letters, include_numbers, include_symbols):
+
+Creates a list of characters (character_pool) based on what options the user has chosen.
+
+For creating a specific size password using random.choice() function randomly selects certain number of individual characters from character_pool.
+
+main():
+
+This performs all tasks that form the heart of this program:
+
+Invokes get_user_input() to get those things that will please the client.
